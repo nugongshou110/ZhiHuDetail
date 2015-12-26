@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_user_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sso_zhihu_logo" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:paddingLeft="5dp"
+        android:text="神灯"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_nickname"
+        android:layout_below="@id/tv_nickname"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="阿拉灯神灯"
+        android:textColor="#bcbcbc" />
+
+    <TextView
+        android:id="@+id/tv_like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_vote_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="3028" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_like_num"
+        android:layout_alignTop="@id/tv_like_num"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/tv_like_num"
+        android:background="#CCC" />
+</RelativeLayout>
